@@ -1,5 +1,5 @@
 buildscript {
-    ext.projectVersion = '0.0.3'
+    ext.projectVersion = '0.0.4'
     ext.projectName = 'kotlin-redux-reselect'
     ext.projectGroup = 'com.github.etalisoft'
     ext.projectDesc = 'A Redux implementation for Kotlin'
