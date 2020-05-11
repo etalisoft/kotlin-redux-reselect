@@ -8,11 +8,12 @@ class Selector<Input, Output> internal constructor(
     private var prevDependency: DependencySet? = null
     private var prevOutput: Output? = null
 
+    @Suppress("UNCHECKED_CAST")
     private fun record(input: Input? = prevInput, dependency: DependencySet? = prevDependency, output: Output? = prevOutput): Output {
         prevInput = input
         prevDependency = dependency
         prevOutput = output
-        return output!!
+        return output as Output
     }
 
     override operator fun invoke(input: Input): Output {
